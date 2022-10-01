@@ -26,7 +26,7 @@ const MenuItem = ({menu}) => {
             <ul style={ulStyleMenu}>
                 <li><a style={aStyleMenu} href="#">Users</a></li>
                 <li><a style={aStyleMenu} href="#">Projects</a></li>
-                <li><a style={aStyleMenu} href="#">TODO</a></li>
+                <li><a style={aStyleMenu} href="#">ToDo</a></li>
             </ul>
         </div>
     )
