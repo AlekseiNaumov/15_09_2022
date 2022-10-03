@@ -13,8 +13,12 @@ class Project(models.Model):
 
 class ToDo(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
+    # project_name = Project.name
     text = models.TextField(blank=False)
     data_create = models.DateField(auto_now_add=False)
     data_update = models.DateField(auto_now=True, blank=True)
     user = models.ForeignKey(User, models.PROTECT)
     is_active = models.BooleanField()
+
+    # def __str__(self):
+    #     return self.project_name
