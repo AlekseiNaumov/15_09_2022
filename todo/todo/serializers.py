@@ -14,3 +14,4 @@ class ToDoModelSerializer(ModelSerializer):
     class Meta:
         model = ToDo
         fields = '__all__'
+        # fields = ['project', 'project_name', 'text', 'data_create', 'data_update', 'user', 'is_active']
